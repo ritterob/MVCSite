@@ -1,0 +1,267 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- #region Main -->
+<main class="container-md">
+    <div class="row m-0">
+        <!-- #region Timeline -->
+        <div class="col-md-6 p-0">
+            <div class="p-4 m-auto">
+                <h2 class="mb-3 smallBanner">My Milestones</h2>
+                <div class="accordion" id="timeline">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                1980
+                            </button>
+                        </h2>
+                        <div id="collapseOne"
+                             class="accordion-collapse collapse show"
+                             data-bs-parent="#timeline">
+                            <div class="accordion-body timelineEntry">
+                                <strong>I met my first personal computer.</strong> Shortly after my school got
+                                a TRS-80, some of us were invited to attend a coding camp hosted by the US Army
+                                at Fort Leavenworth. That experience, along with the encouragement of my
+                                teachers, piqued my interest in programming.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                1985
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#timeline">
+                            <div class="accordion-body timelineEntry">
+                                <strong>I sold my first commercial computer program.</strong> I had been
+                                writing more than just games. In addition to music players and editors, I also
+                                wrote a couple of databases. One of these was a customer database that I wrote
+                                for the TI-99 for a local home improvement company.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree"
+                                    aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                1991
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#timeline">
+                            <div class="accordion-body timelineEntry">
+                                <strong>I bought my first IBM PC.</strong> This marked the beginning of my time
+                                programming fully 16-bit computers. I wrote several DOS utilities, TSRs, and
+                                device drivers, as well as games. I added Microsoft Assembler, C and Microsoft
+                                QuickBASIC to my programming tools.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour"
+                                    aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                1992
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#timeline">
+                            <div class="accordion-body timelineEntry">
+                                <strong>I wrote (and ran) a BBS.</strong> I took a job with a municipality that
+                                wanted an electronic bulletin board so that citizens could contact the mayor,
+                                police chief, and aldermen. We offered email for each of those individuals, as
+                                well as connections to state and federal BBSs through FidoNet.
+                                <p class="mt-2">
+                                    I also wrote software for the water department that calculated everything
+                                    they needed to know for water treatment. The first public release of the
+                                    program, <i>Meter Master,</i> went to the local chapter of the American
+                                    Water Works Association.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive"
+                                    aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                1995
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#timeline">
+                            <div class="accordion-body timelineEntry">
+                                <strong>I began training IT professionals to support DOS and Windows.</strong>
+                                From running a BBS, I began to move more into the hardware, networking, and
+                                support side of the industry. I began a 28-year career of training the people
+                                who keep systems and networks running. Though my focus changed toward
+                                administrative scripting, I never stopped coding. In those early days, I was
+                                writing some very sophisticated (and hundreds-of-lines long) DOS batch files. I
+                                also began learning HTML and building for the nascent World Wide Web.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix"
+                                    aria-expanded="false"
+                                    aria-controls="collapseSix">
+                                1999
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#timeline">
+                            <div class="accordion-body timelineEntry">
+                                <strong>I began learning C++ and Java.</strong> I had become enamored of the
+                                Solaris OS, and acquired a Sun SparcStation as my daily driver at work. Java
+                                had begun to make inroads as the programming language of the Web, and it was on
+                                track to be an even bigger deal when Apple released its new Unix-based OS, so
+                                it became my primary language at that time.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven"
+                                    aria-expanded="false"
+                                    aria-controls="collapseSeven">
+                                2005
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#timeline">
+                            <div class="accordion-body timelineEntry">
+                                <strong>I wrote my first web app.</strong> I had been asked to create a website
+                                that would allow people to register for a church function. I used CGI and
+                                Python to provide the middle tier and back end logic, and created a custom,
+                                flat-file database to store the entries. I used CSS to style the site and to
+                                create well-formatted printouts that could be used at the event to verify the
+                                people who had preregistered.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight"
+                                    aria-expanded="false"
+                                    aria-controls="collapseEight">
+                                2006
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#timeline">
+                            <div class="accordion-body timelineEntry">
+                                <strong>PowerShell 1.0 released.</strong> Python had been my primary scripting
+                                language for getting administrative things done. It ran on Windows, macOS, and
+                                all flavors of UNIX/Linux. PowerShell was a game changer, in that it gives
+                                scripts direct, real-time access to .NET. My script coding transitioned
+                                increasingly to PowerShell, particularly with the open source, cross-platform
+                                releases. It has become an essential part of my teaching in Exchange, Microsoft
+                                365, and Azure administration classes.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNine"
+                                    aria-expanded="false"
+                                    aria-controls="collapseNine">
+                                2023
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#timeline">
+                            <div class="accordion-body timelineEntry">
+                                <strong>Time for a reboot.</strong> I continued coding over the years, despite
+                                it not being my primary job. I wrote novelties and utilities in Ruby, Python,
+                                and PowerShell. I created software for UNIX, Windows, and Palm OS. I
+                                contributed to open-source projects for mainstream and niche operating systems.
+                                I write things for me, my family members, or friends when the need arises. But
+                                now I want to go back to my roots, to code again like I did in the eighties,
+                                when I worked with a team of like-minded high schoolers turning out platformers
+                                and text adventures for the Apple II. Or writing hacking tools for my friends
+                                and their Commodore 64s. I just get a kick out of programming.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #endregion -->
+        <!-- #region Intro -->
+        <div class="col-md-6 p-0" id="intro">
+            <article class="bookish">
+                <h1>There and Back Again</h1>
+                <p>
+                    Like many kids of the eighties, I got my start with personal computers programming the
+                    early eight-bit micros. It's what you had to do; most computers didn't come with a large
+                    selection of ready-made software. If you wanted to really <em>use</em> your computer, you
+                    had to learn to <em>program</em> your computer.
+                </p>
+                <p>
+                    That wasn't a hardship. Many of us found that we had an aptitude for programming and
+                    enjoyed solving the puzzles new projects presented. We wanted to learn and showcase new
+                    skills, making games, music, and business software, and having fun in the process.
+                </p>
+                <p>
+                    Of course, we can never tell how things will turn out. One path leads to another, and we
+                    often find our way back with great difficulty, or not at all. In the words of Robert Frost:
+                </p>
+                <blockquote>
+                    Oh, I kept the first for another day!<br />
+                    Yet knowing how way leads on to way,<br />
+                    I doubted if I should ever come back.
+                </blockquote>
+                <p>
+                    However, after twenty-eight years training IT professionals, I've decided to dust off the
+                    old skills, learn some new ones, and get back to the road not taken. It's been a while, and
+                    things have changed a bit in the four decades since I got my first computer. But I feel
+                    almost like I'm returning to an old homestead and familiar friends. Let's see what the next
+                    few decades will bring.
+                </p>
+            </article>
+        </div>
+        <!-- #endregion -->
+
+    </div>
+
+    <!-- #region Tweeter -->
+    <div class="row m-0 justify-content-center">
+        <div id="tweetHolder" class="col-md-9 p-1 rounded-4">
+            <a class="twitter-timeline"
+               data-height="275"
+               href="https://twitter.com/mechatechzilla?ref_src=twsrc%5Etfw">Tweets by mechatechzilla</a>
+        </div>
+    </div>
+    <!-- #endregion -->
+
+</main>
+<!-- #endregion -->

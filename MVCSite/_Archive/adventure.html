@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Archaelogical Adventure!</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon-48x48.png" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="css/adventure.css" />
+    </head>
+    <body class="container position-relative" onload="setTitle()">
+
+        <!-- #region Header -->
+        <header>
+            <div class="row">
+                <div id="pageTitle" class="screenGlow col-auto m-auto"></div>
+            </div>
+        </header>
+        <!-- #endregion -->
+        
+        <!-- #region Main -->
+        <main>
+            <hr />
+            <div class="row">
+                <article class="col-auto m-auto">
+                    <p>
+                        Your goal is to traverse the jungles of South America, in search of the lost city of the
+                        dead&nbsp;— the ancient Necropolis of a little known branch of the Inca. Rumor has it that some
+                        of these tribesman still exist today, and jealously guard their secrets with beastly
+                        adroitness.
+                    </p>
+                    <p>
+                        You must take on the role of one of the greatest adventurers of all time and, using the skills
+                        you've honed from years of tracking and hunting, and numerous movie and video game appearances,
+                        locate the Necropolis and extract the golden head of Ocxaloc, king of the Inca, from the throne
+                        room where it is enshrined. But beware your rival archaeologist; he, too, is on the trail of
+                        the golden statue. You must defeat him to return alive.
+                    </p>
+                    <p>
+                        Choose from the world's
+                        <span
+                            class="tipper"
+                            data-toggle="tooltip"
+                            placement="top"
+                            title="Indiana Jones, Lara Croft, Allan Quatermain, Pitfall Harry"
+                            >four greatest adventurers</span
+                        >. Each persona has its own weapons and skills that make for unique gameplay in yor quest for
+                        the idol.
+                    </p>
+                    <img id="hudpic" src="images/hud.png" alt="Heads-up display" />
+                    <p>
+                        Use the heads-up display to keep track of your character's health, weapons, ammunition, and
+                        location. With this information, you'll always be ready to make the best decision for any
+                        situation.
+                    </p>
+                    <img src="images/choose_weapon.png" alt="Weapon choice" id="weappic" />
+                    <p>
+                        Select the best weapon for your skills. Each persona has weapons that they are particularly
+                        adept with. Indy's awesome with a whip, Lara is deadly with her knives, Allan is an expert
+                        marksman, and Harry has a boomstick. It's pretty effective.
+                    </p>
+                    <p>
+                        Check out the
+                        <a href="https://github.com/ritterob/Dungeon" target="_blank">[Git repository]</a> for more
+                        information, and have a go at your own
+                    </p>
+                    <h2 class="text-center pageTitle">Archaeological Adventure!</h2>
+                </article>
+            </div>
+        </main>
+        <!-- #endregion -->
+
+        <!-- #region Footer -->
+        <footer>
+            <a href="/projects.html"><i class="fa-solid fa-2xl fa-chess-knight screenGlow"></i></a>
+        </footer>
+        <!-- #endregion -->
+
+        <!-- #region Scripts -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            const tooltipTriggerList = document.querySelectorAll('.tipper');
+            const tooltipList = [...tooltipTriggerList].map(
+                (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+            );
+        </script>
+        <script src="js/adventure.js"></script>
+        <script>
+            typeWriter();
+        </script>
+        <!-- #endregion -->
+    </body>
+</html>

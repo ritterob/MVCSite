@@ -1,0 +1,442 @@
+/* #region Imports */
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Lora&family=UnifrakturMaguntia&display=swap');
+/* #endregion */
+
+/* #region Basic Styles */
+:root {
+    --brushed: linear-gradient(45deg, #999, var(--bs-light), #999);
+    --phaser: radial-gradient(magenta, white, white, white);
+}
+
+body {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    transition: 300ms;
+}
+
+header #siteLogo {
+    max-width: 48px;
+}
+
+blockquote {
+    font-style: oblique;
+    text-align: left;
+    border-left: 3px solid gray;
+    margin: 1rem 0;
+    padding-left: 1rem;
+}
+
+main {
+    animation: fadeIn ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* #endregion */
+
+/* #region Special Styles */
+
+#projectList {
+    list-style-type: none;
+}
+
+#projectList>li {
+    position: relative;
+    padding-top: 0.7rem;
+    margin-left: -2rem;
+}
+
+#projectList img.active {
+    cursor: pointer;
+}
+
+#tweetHolder {
+    margin-bottom: 1em;
+    overflow: hidden;
+    background-image: var(--brushed);
+    color: var(--bs-dark);
+}
+
+#projectInfo {
+    border: 1px solid var(--bs-dark);
+    border-radius: 10px;
+    background-image: var(--brushed);
+    color: var(--bs-dark);
+}
+
+#detailsBox {
+    border: 1px solid var(--bs-dark);
+    border-radius: 10px;
+    background-color: var(--bs-light);
+    box-shadow: 1px 1px 8px inset;
+    color: var(--bs-dark);
+    height: 20em;
+    padding: 1rem;
+}
+
+#animationColumn {
+    justify-content: space-around;
+    padding: 0;
+}
+
+.trigger {
+    background-image: var(--phaser);
+    background-size: 400%;
+    animation: trace-animation 800ms 1;
+}
+
+.trace {
+    background-color: white;
+    height: 0.5rem;
+    margin: 0;
+}
+
+.cover {
+    background-color: var(--bs-warning);
+    color: var(--bs-dark);
+    padding: 0 3em;
+    display: inline;
+    z-index: 5;
+    position: relative;
+    top: -0.2em;
+    left: -14.5em;
+}
+
+.smallBanner {
+    background-image: linear-gradient(to right, var(--bs-dark), var(--bs-dark), var(--bs-secondary) ,var(--bs-light), white);
+    padding: 0.3em;
+    color: var(--bs-light);
+    border-radius: 10px;
+}
+
+.card {
+    width: 18rem;
+    margin: 1rem 0;
+    padding: 0.5rem;
+}
+
+.pdfobject-container {
+    height: 69em;
+    width: 80%;
+    box-shadow: 0.2em 0.2em 0.5em;
+}
+
+.deutsch {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-weight: 600;
+}
+
+.pizazz {
+    background-image: linear-gradient(45deg, black, goldenrod);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    animation: bg-animation 15s infinite alternate;
+    font-weight: 500;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes trace-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+/* #endregion */
+
+/* #region Timeline Styles */
+
+.accordion {
+    box-shadow: 0.3em 0.3em 0.7em;
+}
+
+#collapseOne {
+    background-image: url(/images/TRS-80.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#collapseTwo {
+    background-image: url(/images/TI-99.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+#collapseThree {
+    background-image: url(/images/IBM-PS1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#collapseFour {
+    background-image: url(/images/Amber_monitor.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#collapseFive {
+    background-image: url(/images/Windows_NT_3.5x.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+#collapseSix {
+    background-image: url(/images/Solaris.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#collapseSeven {
+    background-image: url(/images/DEC-Alpha.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#collapseEight {
+    background-image: url(/images/PowerShell.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#collapseNine {
+    background-image: url(/images/code.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.timelineEntry {
+    background-color: rgba(0, 0, 0, 0.63);
+    color: aliceblue;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* #endregion */
+
+/* #region Bookish Styles */
+
+.bookish {
+    color: black;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    font-family: Lora, serif;
+    font-size: 1.1rem;
+    text-align: left;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    max-width: 36rem;
+    box-shadow: 1px 1px 0.3rem;
+}
+
+.bookish h1 {
+    margin: 1.5rem 0;
+    text-align: center;
+    font-family: Karla, sans-serif;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+}
+
+.bookish p {
+    margin: 0.2rem;
+}
+
+.bookish p:first-of-type::first-letter {
+    color: maroon;
+    font-weight: 600;
+    initial-letter: 2;
+}
+
+.bookish p:not(:first-of-type) {
+    text-indent: 2rem;
+}
+
+/* #endregion */
+
+/* #region Custom Media Queries */
+
+@media screen and (width < 360px) {
+    #intro {
+        display: none;
+    }
+}
+
+@media screen and (440 <= width < 600px) {
+    .smallBanner {
+        background-image: linear-gradient(to right, var(--bs-dark), var(--bs-secondary), white);
+    }
+}
+
+@media screen and (width < 440px) {
+    .smallBanner {
+        background-image: linear-gradient(to right, var(--bs-dark), gray);
+    }
+}
+
+@media screen and (width < 576px) {
+    .trace {
+        display: none;
+    }
+    #imageList {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #projectList li {
+        display: inline-block;
+        margin-left: 0;
+    }
+}
+/* #endregion */
+
+/* #region Classmates */
+
+.colleagues {
+    width: 100%;
+    max-width: 90%;
+    height: 450px;
+    overflow: hidden;
+    margin: 1rem auto 2rem;
+    box-shadow: 0.5em 0.5em 0.7em black;
+}
+.colleagues ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+}
+.colleagues ul li {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    width: 16.666%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 500ms ease;
+}
+.colleagues ul li div {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+.colleagues ul li div a {
+    display: block;
+    height: 450px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    /* vertical-align: top; */
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    font-family: Karla, sans-serif;
+    transition: all 200ms ease;
+}
+.colleagues ul li div a * {
+    opacity: 0;
+    margin: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 5;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+.colleagues ul li div a h2 {
+    font-family: Karla, sans-serif;
+    font-weight: 600;
+    color: aliceblue;
+    text-overflow: clip;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    top: 160px;
+}
+.colleagues ul li div a p {
+    top: 160px;
+    font-size: 1.2rem;
+}
+
+.colleagues ul li:nth-child(1) {
+    background-image: url('/images/Andrew_Cocroft.jpg');
+    background-size: cover;
+    background-position: top;
+}
+.colleagues ul li:nth-child(2) {
+    background-image: url('/images/Cody_Slivinski.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.colleagues ul li:nth-child(3) {
+    background-image: url('/images/Darron_Werntz.jpg');
+    background-size: cover;
+    background-position: top;
+}
+.colleagues ul li:nth-child(4) {
+    background-image: url('/images/Devon_Schmidt.JPEG');
+    background-size: cover;
+    background-position: top;
+}
+.colleagues ul li:nth-child(5) {
+    background-image: url('/images/Jace_Cockrell.png');
+    background-size: cover;
+    background-position: top;
+}
+.colleagues ul li:nth-child(6) {
+    background-image: url('/images/Kyle_Gough.jpg');
+    background-size: cover;
+    background-position: top;
+}
+.colleagues ul li:nth-child(7) {
+    background-image: url('/images/Nicholas_Davolt.jpg');
+    background-size: cover;
+}
+
+.colleagues ul:hover li {
+    width: 8%;
+}
+.colleagues ul:hover li:hover {
+    width: 40%;
+}
+.colleagues ul:hover li:hover a {
+    background: rgba(0, 0, 0, 0.4);
+}
+.colleagues ul:hover li:hover a * {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+/* #endregion */

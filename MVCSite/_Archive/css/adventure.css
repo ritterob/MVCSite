@@ -1,0 +1,115 @@
+/* #region Imports */
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=UnifrakturMaguntia&family=VT323&display=swap');
+/* #endregion */
+
+/* #region Basic Style */
+
+:root {
+    --dark: #090909;
+    --light: #bbb;
+    --phosphor: #6e6;
+    --shadow: #9df;
+    --amber: #eb4;
+}
+
+body {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    background-color: var(--dark);
+    color: var(--phosphor);
+    padding: 2rem 0;
+}
+
+h1, h2, h3 {
+    color: var(--phosphor);
+}
+
+article p {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    max-width: 36em;
+}
+
+p a {
+    text-decoration: none;
+    color:var(--amber);
+}
+
+p a:hover {
+    color: var(--dark);
+    background-color: var(--amber);
+    font-weight: 600;
+}
+
+/* #endregion */
+
+/* #region Special Sytles */
+
+.fadeFromBlack {
+    position: fixed; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1.0;
+    background-color: var(--dark); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    color: var(--phosphor);
+    padding: 2em;
+    font-family: 'VT323', monospace;
+    font-size: 3rem;
+}
+
+.tipper {
+    color: var(--phosphor);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--phosphor);
+}
+
+.tooltip {
+    /* filter: drop-shadow(rgba(0, 0, 0, 0.3) 0 2px 5px); */
+    .tooltip-inner {
+        font-size: 1.7em;
+        font-family: 'VT323', monospace;
+        font-weight: 600;
+        border: 6px solid --light;
+        background-color: var(--dark);
+        color: var(--amber);
+    }
+    .tooltip-arrow {
+        background-color: var(--amber);
+    }
+}
+
+.screenGlow {
+    color: var(--phosphor);
+    text-shadow: 1px 1px 5px var(--shadow);
+}
+
+#hudpic,
+#weappic {
+    border: 0.2rem solid var(--light);
+    width: 40%;
+    margin: 1.5rem 1rem 0.7rem;
+    min-width: 240px;
+}
+
+#hudpic {
+    float: right;
+}
+
+#weappic {
+    float: left;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region Media Queries */
+
+/* #endregion */

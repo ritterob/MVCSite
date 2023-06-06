@@ -1,0 +1,102 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-MVCSite-1f8a4f18-e308-45cd-9da6-e68d9e02d108</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\adventure.html" />
+    <Content Remove="wwwroot\connections.html" />
+    <Content Remove="wwwroot\contact.html" />
+    <Content Remove="wwwroot\css\adventure.css" />
+    <Content Remove="wwwroot\css\main.css" />
+    <Content Remove="wwwroot\css\vendor\bootstrap.min.css" />
+    <Content Remove="wwwroot\docs\Ritter_Resume_2023.pdf" />
+    <Content Remove="wwwroot\images\Amber_monitor.jpg" />
+    <Content Remove="wwwroot\images\Andrew_Cocroft.jpg" />
+    <Content Remove="wwwroot\images\Calendar.png" />
+    <Content Remove="wwwroot\images\Cart.png" />
+    <Content Remove="wwwroot\images\choose_weapon.png" />
+    <Content Remove="wwwroot\images\code.jpg" />
+    <Content Remove="wwwroot\images\Cody_Slivinski.jpg" />
+    <Content Remove="wwwroot\images\Darron_Werntz.jpg" />
+    <Content Remove="wwwroot\images\DEC-Alpha.jpg" />
+    <Content Remove="wwwroot\images\Devon_Schmidt.JPEG" />
+    <Content Remove="wwwroot\images\favicon-32x32.png" />
+    <Content Remove="wwwroot\images\favicon-48x48.png" />
+    <Content Remove="wwwroot\images\Hard_hat.png" />
+    <Content Remove="wwwroot\images\hud.png" />
+    <Content Remove="wwwroot\images\IBM-PS1.jpg" />
+    <Content Remove="wwwroot\images\Jace_Cockrell.png" />
+    <Content Remove="wwwroot\images\Jigsaw.png" />
+    <Content Remove="wwwroot\images\knight-sm.png" />
+    <Content Remove="wwwroot\images\knight.png" />
+    <Content Remove="wwwroot\images\Kyle_Gough.jpg" />
+    <Content Remove="wwwroot\images\Nicholas_Davolt.jpg" />
+    <Content Remove="wwwroot\images\PowerShell.jpg" />
+    <Content Remove="wwwroot\images\React.png" />
+    <Content Remove="wwwroot\images\Solaris.jpg" />
+    <Content Remove="wwwroot\images\Terminal.png" />
+    <Content Remove="wwwroot\images\TI-99.jpg" />
+    <Content Remove="wwwroot\images\TRS-80.jpg" />
+    <Content Remove="wwwroot\images\Windows_NT_3.5x.svg" />
+    <Content Remove="wwwroot\js\adventure.js" />
+    <Content Remove="wwwroot\js\main.js" />
+    <Content Remove="wwwroot\projects.html" />
+    <Content Remove="wwwroot\resume.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.15" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\adventure.html" />
+    <None Include="wwwroot\connections.html" />
+    <None Include="wwwroot\contact.html" />
+    <None Include="wwwroot\css\adventure.css" />
+    <None Include="wwwroot\css\main.css" />
+    <None Include="wwwroot\css\vendor\bootstrap.min.css" />
+    <None Include="wwwroot\docs\Ritter_Resume_2023.pdf" />
+    <None Include="wwwroot\images\Amber_monitor.jpg" />
+    <None Include="wwwroot\images\Andrew_Cocroft.jpg" />
+    <None Include="wwwroot\images\Calendar.png" />
+    <None Include="wwwroot\images\Cart.png" />
+    <None Include="wwwroot\images\choose_weapon.png" />
+    <None Include="wwwroot\images\code.jpg" />
+    <None Include="wwwroot\images\Cody_Slivinski.jpg" />
+    <None Include="wwwroot\images\Darron_Werntz.jpg" />
+    <None Include="wwwroot\images\DEC-Alpha.jpg" />
+    <None Include="wwwroot\images\Devon_Schmidt.JPEG" />
+    <None Include="wwwroot\images\favicon-32x32.png" />
+    <None Include="wwwroot\images\favicon-48x48.png" />
+    <None Include="wwwroot\images\Hard_hat.png" />
+    <None Include="wwwroot\images\hud.png" />
+    <None Include="wwwroot\images\IBM-PS1.jpg" />
+    <None Include="wwwroot\images\Jace_Cockrell.png" />
+    <None Include="wwwroot\images\Jigsaw.png" />
+    <None Include="wwwroot\images\knight-sm.png" />
+    <None Include="wwwroot\images\knight.png" />
+    <None Include="wwwroot\images\Kyle_Gough.jpg" />
+    <None Include="wwwroot\images\Nicholas_Davolt.jpg" />
+    <None Include="wwwroot\images\PowerShell.jpg" />
+    <None Include="wwwroot\images\React.png" />
+    <None Include="wwwroot\images\Solaris.jpg" />
+    <None Include="wwwroot\images\Terminal.png" />
+    <None Include="wwwroot\images\TI-99.jpg" />
+    <None Include="wwwroot\images\TRS-80.jpg" />
+    <None Include="wwwroot\images\Windows_NT_3.5x.svg" />
+    <None Include="wwwroot\js\adventure.js" />
+    <None Include="wwwroot\js\main.js" />
+    <None Include="wwwroot\projects.html" />
+    <None Include="wwwroot\resume.html" />
+  </ItemGroup>
+
+</Project>
