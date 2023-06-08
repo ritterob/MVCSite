@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewData["Title"] = "Projects";
+}
+
+<!-- #region Main -->
+<main class="container-md">
+    <div class="col-auto">
+        <div class="p-2 border-1">
+            <p class="text-primary fs-5 text-center">
+                <i>&ldquo;The blank canvas isn&rsquo;t empty, but filled with possibilities.&rdquo;</i>
+            </p>
+        </div>
+    </div>
+    <h2 class="smallBanner">Works In Progress</h2>
+    <div class="row justify-content-center p-2">
+        <div id="projectInfo" class="col-lg-6 col-md-7 col-sm-9 py-3">
+            <h3>Project Details</h3>
+            <hr />
+            <div id="detailsBox">Hover over an image for details.</div>
+        </div>
+        <div id="animationColumn" class="col-lg-4 col-md-2 col-sm-1 py-3 d-flex flex-column">
+            <div id="game" class="trace"></div>
+            <div id="store" class="trace"></div>
+            <div id="api" class="trace"></div>
+            <div id="react" class="trace"></div>
+            <div id="schedule" class="trace"></div>
+        </div>
+        <div id="imageList" class="col-lg-1 col-sm-2 py-3">
+            <ul id="projectList">
+                <li>
+                    <img src="/images/Terminal.png"
+                         class="active"
+                         width="64px"
+                         alt="Computer terminal"
+                         onmouseover="ImgMouseOver('#game')"
+                         onmouseout="ImgMouseOut('#game')"
+                         onclick="ImgClick('#game')" />
+                </li>
+                <li>
+                    <img src="/images/Cart.png"
+                         width="64px"
+                         alt="Shopping cart"
+                         onmouseover="ImgMouseOver('#store')"
+                         onmouseout="ImgMouseOut('#store')"
+                         onclick="ImgClick('#store')" />
+                </li>
+                <li>
+                    <img src="/images/Jigsaw.png"
+                         width="64px"
+                         alt="Jigsaw puzzle piece"
+                         onmouseover="ImgMouseOver('#api')"
+                         onmouseout="ImgMouseOut('#api')"
+                         onclick="ImgClick('#api')" />
+                </li>
+                <li>
+                    <img src="/images/React.png"
+                         width="64px"
+                         alt="Atomic symbol"
+                         onmouseover="ImgMouseOver('#react')"
+                         onmouseout="ImgMouseOut('#react')"
+                         onclick="ImgClick('#react')" />
+                </li>
+                <li>
+                    <img src="/images/Calendar.png"
+                         width="64px"
+                         alt="Calendar"
+                         onmouseover="ImgMouseOver('#schedule')"
+                         onmouseout="ImgMouseOut('#schedule')"
+                         onclick="ImgClick('#schedule')" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+<!-- #endregion -->

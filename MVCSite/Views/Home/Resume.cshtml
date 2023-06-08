@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "Resume";
+}
+
+<!-- #region Main -->
+<main class="container-md">
+    <div class="col-auto">
+        <div class="p-2 border-1">
+            <p class="text-primary fs-5 text-center">
+                <i>&ldquo;Sing your song so that others can hear.&rdquo;</i>
+            </p>
+        </div>
+    </div>
+    <h2 class="smallBanner">My Resume</h2>
+    <div class="row mb-3 p-3">
+        <div class="col">
+            <div class="m-auto" id="resumeViewer"></div>
+        </div>
+    </div>
+</main>
+<!-- #endregion -->
+@section Scripts {
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.11/pdfobject.min.js"
+        integrity="sha512-Ei1WlhMCjToeHGX4Dc2GvcnQqXiLNoNJA7BCSpKNd+Epg+3zxSpllzvub5lTrIOZs+CqyFjzkOiW7JadQ8qdog=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    </script>
+    <script>
+        PDFObject.embed('/docs/Ritter_Resume_2023.pdf', '#resumeViewer');
+    </script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

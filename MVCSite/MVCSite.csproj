@@ -9,8 +9,6 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\adventure.html" />
-    <Content Remove="wwwroot\connections.html" />
-    <Content Remove="wwwroot\contact.html" />
     <Content Remove="wwwroot\css\adventure.css" />
     <Content Remove="wwwroot\css\main.css" />
     <Content Remove="wwwroot\css\vendor\bootstrap.min.css" />
@@ -45,8 +43,6 @@
     <Content Remove="wwwroot\images\Windows_NT_3.5x.svg" />
     <Content Remove="wwwroot\js\adventure.js" />
     <Content Remove="wwwroot\js\main.js" />
-    <Content Remove="wwwroot\projects.html" />
-    <Content Remove="wwwroot\resume.html" />
   </ItemGroup>
 
   <ItemGroup>
@@ -55,12 +51,11 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.15" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="wwwroot\adventure.html" />
-    <None Include="wwwroot\connections.html" />
-    <None Include="wwwroot\contact.html" />
     <None Include="wwwroot\css\adventure.css" />
     <None Include="wwwroot\css\main.css" />
     <None Include="wwwroot\css\vendor\bootstrap.min.css" />
@@ -95,8 +90,6 @@
     <None Include="wwwroot\images\Windows_NT_3.5x.svg" />
     <None Include="wwwroot\js\adventure.js" />
     <None Include="wwwroot\js\main.js" />
-    <None Include="wwwroot\projects.html" />
-    <None Include="wwwroot\resume.html" />
   </ItemGroup>
 
 </Project>

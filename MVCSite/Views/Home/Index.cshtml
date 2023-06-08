@@ -1,14 +1,21 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
 <!-- #region Main -->
 <main class="container-md">
+    <div class="col-auto">
+        <div class="p-2 border-1">
+            <p class="text-primary fs-5 text-center">
+                <i>&ldquo;Kindness costs nothing, but pays huge dividends.&rdquo;</i>
+            </p>
+        </div>
+    </div>
+    <h2 class="smallBanner">My Milestones</h2>
     <div class="row m-0">
         <!-- #region Timeline -->
         <div class="col-md-6 p-0">
             <div class="p-4 m-auto">
-                <h2 class="mb-3 smallBanner">My Milestones</h2>
                 <div class="accordion" id="timeline">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
@@ -265,3 +272,10 @@
 
 </main>
 <!-- #endregion -->
+
+@section Scripts {
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -14,7 +14,19 @@ namespace MVCSite.Controllers {
             return View();
         }
 
-        public IActionResult Privacy() {
+        public IActionResult Resume() {
+            return View();
+        }
+
+        public IActionResult Projects() {
+            return View();
+        }
+
+        public IActionResult Connections() {
+            return View();
+        }
+
+        public IActionResult Contact() {
             return View();
         }
 
