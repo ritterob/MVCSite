@@ -1,0 +1,23 @@
+﻿@model MVCSite.Models.ContactViewModel
+@{
+    ViewData["Title"] = "EmailConfirmation";
+}
+
+<main class="container-md">
+    <div class="row p-3 mb-3">
+        <div>
+            <h3>Message Sent!</h3>
+            <p>
+                Thank you for contacting me. I will respond to @Model.Email in the next one to three 
+                business days.
+            </p>
+            <div class="col justify-content-center">
+                <p class="text-center">
+                    The following message was sent on @DateTime.Now.ToShortDateString() at 
+                    @DateTime.Now.ToShortTimeString():
+                </p>
+                <p class="text-center"><em>@Model.Message</em></p>
+            </div>
+        </div>
+    </div>
+</main>
